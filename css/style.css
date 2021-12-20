@@ -875,13 +875,24 @@ body {
     margin-top: 220px;
     font-size: 14px;
   }
-
-  .links {
+  .fixmenu__text .links {
     padding-top: 110px;
   }
-
-  .links img {
+  .fixmenu__text .links .links img {
     padding-bottom: 26px;
+  }
+}
+@media (max-height: 587px) {
+  .fixmenu__text {
+    display: none;
+  }
+  .fixmenu__text .links {
+    padding-top: 150px;
+  }
+}
+@media (max-height: 356px) {
+  .links {
+    padding-top: 90px;
   }
 }
 

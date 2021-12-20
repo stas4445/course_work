@@ -51,11 +51,11 @@
  }
 
 
-
 //----------------------------------------------------------------
 $font1: "Open Sans";
 $font2: "Open Sans Condensed";
 $color1: #D1A954;
+$color2: #fff;
 @mixin fontstyle ($fontweight,$letspace, $linehight) {
    font-weight: $fontweight;
    letter-spacing: $letspace;
@@ -94,7 +94,7 @@ $color1: #D1A954;
 }
 .menu__link {
    margin: 0px 63px 0px 0px;
-   color: #fff; 
+   color: $color2; 
 }
 
 /*----------------------fix-------------------------------*/
@@ -160,7 +160,7 @@ $color1: #D1A954;
    @include fontstyle (700, 0.1em, 138%);
    font-family: $font2;
    font-size: 18px;
-   color: #fff;
+   color: $color2;
    background-color: $color1;
    padding: 1.5% 4%;
 }
@@ -320,7 +320,7 @@ $color1: #D1A954;
    @include fontstyle (700, 0.1em, 25px);
    padding: 12px 3.61%;
    background-color: $color1;
-   color: #fff;
+   color: $color2;
    font-family: $font2;
    font-size: 18px;
 }
@@ -438,9 +438,6 @@ $color1: #D1A954;
       text-align: left;
       .content1__picture {
          display: none;
-      }
-      .content1__header {
-        // padding-top: 24%;
       }
       .content1__text {
          width: auto;
@@ -787,12 +784,24 @@ $color1: #D1A954;
    .fixmenu__text {
       margin-top: 220px; 
       font-size: 14px;
+      .links {
+         padding-top: 110px;
+         .links img {
+            padding-bottom: 26px;
+         }
+      }
    }
+}
+@media (max-height: 587px) {  
+   .fixmenu__text {
+     display: none;
+     .links {
+      padding-top: 150px;
+   }
+   }
+}
+@media (max-height: 356px) {  
    .links {
-      padding-top: 110px;
+      padding-top: 90px;
    }
-   .links img {
-      padding-bottom: 26px;
-   }
- 
 }
