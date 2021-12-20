@@ -600,11 +600,10 @@ body {
     flex-wrap: wrap;
     text-align: center;
   }
-
-  .numbers__num {
-    font-size: 15px;
+  .numbers .numbers__num {
+    font-size: 12px;
     margin-bottom: 5%;
-    margin: 2% auto;
+    margin: 2% 1.6%;
   }
 
   .pics__scroll {
@@ -673,6 +672,10 @@ body {
 
   .send__text {
     line-height: 120%;
+  }
+
+  .numbers__num {
+    margin: 2% auto;
   }
 }
 @media (max-width: 641px) {
@@ -788,10 +791,6 @@ body {
   .inputs__td {
     width: 100%;
     margin-top: 15px;
-  }
-
-  .numbers__num {
-    font-size: 13px;
   }
 }
 @media (max-width: 499px) {

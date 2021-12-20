@@ -528,12 +528,13 @@ $color2: #fff;
       display: flex;
       flex-wrap: wrap;
       text-align: center;
+      .numbers__num {
+         font-size: 12px;
+         margin-bottom: 5%;
+         margin: 2% 1.6%;   
+      }
    }
-   .numbers__num {
-      font-size: 15px;
-      margin-bottom: 5%;
-      margin: 2% auto;   
-   }
+ 
    .pics__scroll {
       max-width: 32%;
    }
@@ -573,7 +574,7 @@ $color2: #fff;
   .inform4__years {
    padding-left: 13%;
    font-size: 65px;
-
+ 
 }
 
 }
@@ -590,6 +591,9 @@ $color2: #fff;
 }
 .send__text {
    line-height: 120%;
+}
+.numbers__num {
+   margin: 2% auto;   
 }
 }
 
@@ -704,10 +708,6 @@ $color2: #fff;
    width: 100%;
   margin-top: 15px;
 }
-.numbers__num {
-   font-size: 13px;  
-}
-
 }
 
 @media (max-width: 499px) {
