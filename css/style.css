@@ -417,7 +417,6 @@ body {
   border-top: 1px solid #565656;
 }
 
-/*----------------------------------------------*/
 @media (min-width: 1856px) {
   .pics__scroll {
     min-width: 26.6%;
@@ -745,7 +744,7 @@ body {
   .menu__link {
     display: block;
     padding: 12px 30px;
-    color: white;
+    color: #fff;
     font-family: "Open Sans Condensed";
     font-size: 18px;
     font-weight: 600;
