@@ -54,7 +54,14 @@ body {
   box-sizing: content-box;
 }
 
-.word1 {
+.page-header {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 135%;
+  font-size: 48px;
+  text-align: center;
+}
+.page-header .word1 {
   color: #D1A954;
 }
 
@@ -185,11 +192,6 @@ body {
   z-index: 2;
 }
 .content2 .content2__header {
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  line-height: 135%;
-  font-size: 48px;
-  text-align: center;
   margin-top: 200px;
   margin-bottom: 100px;
 }
@@ -238,11 +240,6 @@ body {
 
 /*-----------------------------page3---------------------*/
 .content3__header {
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  line-height: 135%;
-  font-size: 48px;
-  text-align: center;
   padding-top: 150px;
   margin-bottom: 100px;
 }
@@ -306,11 +303,6 @@ body {
 
 /*-------------page5----------------------------*/
 .inform5__header {
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  line-height: 135%;
-  font-size: 48px;
-  text-align: center;
   padding-top: 150px;
 }
 
@@ -329,11 +321,6 @@ body {
 
 /*---------page6----------------------------*/
 .inform6__header {
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  line-height: 135%;
-  font-size: 48px;
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 100px;
 }

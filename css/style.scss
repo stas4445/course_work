@@ -24,8 +24,14 @@ $color2: #fff;
    letter-spacing: $letspace;
    line-height: $linehight;
 }
-.word1 {
-   color: $color1;
+
+ .page-header {
+   @include fontstyle (300, 0.1em, 135%);
+   font-size: 48px;
+   text-align: center;
+   .word1 {
+      color: $color1;
+    }
  }
 //------------------header----------------------------------------
 #burger__toggle {
@@ -133,9 +139,6 @@ $color2: #fff;
    position: relative;
    z-index: 2;
    .content2__header {
-      @include fontstyle (300, 0.1em, 135%);
-      font-size: 48px;
-      text-align: center;
       margin-top: 200px;
       margin-bottom: 100px;
    }
@@ -175,9 +178,6 @@ $color2: #fff;
 
 /*-----------------------------page3---------------------*/
 .content3__header {
-   @include fontstyle (300, 0.1em, 135%);
-   font-size: 48px;
-   text-align: center;
    padding-top: 150px;
    margin-bottom: 100px;
 }
@@ -227,9 +227,6 @@ $color2: #fff;
 }
  /*-------------page5----------------------------*/
 .inform5__header {
-   @include fontstyle (300, 0.1em, 135%);
-   font-size: 48px;
-   text-align: center;
    padding-top: 150px;
 }
 .partners {  
@@ -247,9 +244,6 @@ $color2: #fff;
 
 /*---------page6----------------------------*/
 .inform6__header {
-   @include fontstyle (300, 0.1em, 135%);
-   font-size: 48px;
-   text-align: center;
    padding-top: 50px;
    padding-bottom: 100px;
 }
