@@ -60,7 +60,7 @@ body {
   color: #D1A954;
 }
 
-#menu__toggle {
+#burger__toggle {
   display: none;
 }
 
@@ -678,26 +678,26 @@ body {
   }
 }
 @media (max-width: 641px) {
-  #menu__toggle {
+  #burger__toggle {
     opacity: 0;
   }
-  #menu__toggle:checked ~ .menu__btn > span {
+  #burger__toggle:checked ~ .burger__btn > span {
     transform: rotate(45deg);
   }
-  #menu__toggle:checked ~ .menu__btn > span::before {
+  #burger__toggle:checked ~ .burger__btn > span::before {
     top: 0;
     transform: rotate(0);
   }
-  #menu__toggle:checked ~ .menu__btn > span::after {
+  #burger__toggle:checked ~ .burger__btn > span::after {
     top: 0;
     transform: rotate(90deg);
   }
-  #menu__toggle:checked ~ .menu {
+  #burger__toggle:checked ~ .menu {
     visibility: visible;
     left: 0;
   }
 
-  .menu__btn > span::after, .menu__btn > span::before, .menu__btn > span {
+  .burger__btn > span::after, .burger__btn > span::before, .burger__btn > span {
     display: block;
     position: absolute;
     width: 100%;
@@ -706,7 +706,7 @@ body {
     transition-duration: 0.25s;
   }
 
-  .menu__btn {
+  .burger__btn {
     display: flex;
     align-items: center;
     position: fixed;
@@ -717,11 +717,11 @@ body {
     cursor: pointer;
     z-index: 1;
   }
-  .menu__btn > span::before {
+  .burger__btn > span::before {
     content: "";
     top: -8px;
   }
-  .menu__btn > span::after {
+  .burger__btn > span::after {
     content: "";
     top: 8px;
   }

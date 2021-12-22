@@ -245,9 +245,9 @@ $color2: #fff;
 
 @media (max-width: 641px) {
 
-#menu__toggle {
+#burger__toggle {
    opacity: 0;
-   &:checked ~ .menu__btn > span{
+   &:checked ~ .burger__btn > span{
       transform: rotate(45deg);
       &::before {
          top: 0;
@@ -263,7 +263,7 @@ $color2: #fff;
       left: 0;
     }
  }
- %menu-btn {
+ %burger-btn {
    display: block;
    position: absolute;
    width: 100%;
@@ -271,7 +271,7 @@ $color2: #fff;
    background-color: #616161;
    transition-duration: .25s; 
  }
- .menu__btn {
+ .burger__btn {
    display: flex;
    align-items: center;
    position: fixed;
@@ -282,14 +282,14 @@ $color2: #fff;
    cursor: pointer;
    z-index: 1;
    >span {
-		@extend %menu-btn;
+		@extend %burger-btn;
 		&::before {
-         @extend %menu-btn;
+         @extend %burger-btn;
 			content: '';
 			top: -8px;
 		}
 		&::after {
-         @extend %menu-btn;
+         @extend %burger-btn;
 			content: '';
 			top: 8px;
 		}
